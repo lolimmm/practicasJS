@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1</title>
+    <script src="javascript.js"></script>
+    
+    <style type="text/css">
+        .rojo{
+            background-color: red;
+        }
+
+        .verde{
+            background-color: green;
+        }
+
+        #capaColor{
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="formulario" id="formulario" action="http://google.es" method="get">
+        <label for="nick">Nombre: </label>
+        <input type="text" name="nick" id="nick">
+
+        <label for="anyos">Edad: </label>
+        <input type="text" name="anyos" id="anyos">
+    
+
+        <label for="color">Color favorito: </label>
+        <select id="color" name="color">
+            <option value="black">black</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+            <option value="red">red</option>
+            <option value="yellow">yellow</option>
+            <option value="white">white</option>
+        </select>
+
+        
+        <br><input type="radio" id="mayor" name="edad" value="Mayor">
+        <label for="mayor">Mayor Edad</label>
+
+        <input type="radio" id="menor" name="edad" value="Menor">
+        <label for="menor">Menor Edad</label><br>
+
+        <input type="submit" id="enviar" name="enviar" value="Enviar">
+
+    </form>
+
+    <div id="capaColor"></div>
+
+    <div id="resultado"></div>
+    
+</body>
+</html>
