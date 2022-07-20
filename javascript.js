@@ -82,4 +82,14 @@ function inicializar(){
         
         return(devolver); // Se retorna
     }
+
+    // Algunas pruebas:
+
+    // Botón color de fondo
+    document.getElementById("fondo").onclick = function(){
+        // document.getElementById("cuerpo").style.background = "blue";
+        document.getElementsByTagName("body")[0].className = "verde";
+        document.getElementsByTagName("div")[1].style.background = "blue";
+       
+    }
 }
